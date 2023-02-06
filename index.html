@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>My Personal Web Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    
+<style>
+
+body {
+    
+    margin: 0; 
+    background-image: url(pawel-.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-color:rgb(6, 2, 22);
+    font-family: 'Grandslang roman', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+header {
+    background-color: rgba(243, 246, 250, 0.91);
+    color: rgb(7, 12, 42);
+    display: flex;
+    justify-content: left, center;
+    align-items: center;
+    font-family: 'Grandslang roman', sans-serif;
+    height: 75px;
+    letter-spacing: 1rem;
+    box-shadow: inset;
+    padding: 0%;
+    
+    
+}
+
+header h1 {
+    margin: 0;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    
+    
+    
+}
+
+
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+.about-me {
+    background-color: #fff;
+    padding: 25px;
+    box-shadow: 2px 2px 4px rgb(167, 171, 181);
+    margin-top: 20px;
+    letter-spacing: 2px;
+    
+}
+
+.about-me h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    display: block;
+    padding-bottom: 1%;
+    font-family: 'Grandslang roman', sans-serif;
+    font-size: 26px;
+    line-height: 1.3em;
+    font-weight: 300;
+    
+}
+
+.about-me p {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Grandslang roman', sans-serif;
+    letter-spacing: 0.5px;
+    text-align: justify;
+    
+}
+
+.my-skills {
+    background-color: #fff;
+    padding: 26px;
+    box-shadow: 2px 2px 4px #ccc;
+    margin-top: 25px;
+    letter-spacing: 2px;
+    font-family: 'Grandslang roman', sans-serif;
+    font-size: 26px;
+    letter-spacing: 2px;
+    
+}
+
+.my-skills h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    display: block;
+    padding-bottom: 1%;
+    font-family: 'Grandslang roman', sans-serif;
+    font-size: 26px;
+    line-height: 1.3em;
+    font-weight: 300;
+  
+}
+
+.my-skillss {
+    padding: 1rem 2rem;
+    padding-top: 1rem;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    margin-right: 1.5rem;
+    background: rgba(9, 90, 229, 0.2);
+    font-weight: 600;
+    color: #2d2463;
+    margin: 0%;
+    padding: 1%;
+    box-sizing: inherit;
+    display:inline-block;
+    font-family: inherit;
+    border-radius: 5%;
+    letter-spacing: 2px;
+    font-family: 'Grandslang roman', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    
+}
+
+
+.underline-box{
+  padding: 0px;
+  border-bottom: 3px solid rgb(3, 1, 47);
+  width:fit-content;
+
+
+
+}
+
+
+.social-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 25px;
+  padding: 30px;
+  
+}
+
+.social-button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  width: 64px;
+  height: 64px;
+  text-decoration: none;
+  border-radius: 100%;
+  background: #fff;
+  text-align: center;
+}
+.social-button::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 50%;
+  display: block;
+  width: 0;
+  height: 0;
+  border-radius: 100%;
+  transition: 0.3s;
+}
+.social-button:focus, .social-button:hover {
+  color: #fff;
+}
+.social-button:focus::after, .social-button:hover::after {
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  margin-left: calc(-50% - 1px);
+}
+.social-button i,
+
+.social-button svg {
+  position: relative;
+  z-index: 1;
+  transition: 0.3s;
+}
+.social-button i {
+  font-size: 25.6px;
+}
+.social-button svg {
+  height: 40%;
+  width: 40%;
+}
+
+.social-button--linkedin {
+  color: #0077b5;
+}
+.social-button--linkedin::after {
+  background: #0077b5;
+  box-shadow: 0 0 24px 0 #9cc2ea
+}
+.social-button--github {
+  color: #000000;
+}
+.social-button--github::after {
+  background: #000000;
+  box-shadow: 0 0 24px 0 #ffffff
+}
+
+#header {
+
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    
+}
+
+
+.header-sub {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-family: 'Grandslang roman', sans-serif;
+    font-weight: 700;
+    justify-content: space-between;
+    align-items:center;
+    box-shadow:#0077b5;
+    
+
+    
+}
+
+.headername  {
+  
+  text-align: center;
+  float: left;
+  padding-left: 9%;
+  text-shadow: #6e6bab;
+  
+}
+
+
+.footer {
+  margin: auto;
+  margin-bottom: 0px;
+  position: fixed;
+  left: 0;
+  bottom: 0%;
+  width: 100%;
+  height:60px;
+  text-align: center;
+  background-color:#020116;
+  color:#020116;
+  
+}
+
+
+         
+
+.profilepic {
+  left: 0%;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position: relative;
+  border: 3px solid #0095d55b;
+  outline: 5px solid #abb0c5;
+  
+}
+.oval {
+  left: 0%;
+  height: 80px;
+  width: 80px;
+  background-color: #0b0931;
+  border-radius: 0%;
+  position: absolute;
+  transform: skew(30deg);
+ 
+}
+.otherside {
+  left: 0%;
+  height: 80px;
+  width: 80px;
+  background-color: #141a7399;
+  border-radius: 0%;
+  position: absolute;
+  transform: skew(-30deg);
+}
+ 
+  
+
+
+
+
+</style>
+    </head>
+    <body>
+
+
+ 
+                
+                         
+                <header class="header-sub">
+                    <div>
+                      <div class="otherside"></div>
+                      <div class="oval"></div>
+                      <img src="https://avatars.githubusercontent.com/u/123380766?v=4 "  alt="profilepic" class="profilepic">
+                     
+                        
+                    
+                  </div>
+                    <h1 class="headername">    Rabia Cakariz    </h1>
+                     
+                    <script>
+                      var today = new Date();
+                      var hourNow = today.getHours();
+                      var greeting;
+                      
+                      if (hourNow > 18) {
+                          greeting = 'Good Evening!';
+                      } else if (hourNow > 12) {
+                          greeting = 'Good Afternoon!';
+                      } else if (hourNow > 0) {
+                          greeting = 'Good Morning!';
+                      } else {
+                          greeting = 'Welcome!';
+                      }
+                      
+                      document.write('<h10>' + greeting + '</h10>');
+                  </script>
+                    
+                  </header>
+
+                <div class="container">
+                    <section class="about-me">
+                        <h2 class="underline-box">About Me</h2>
+                        
+                        <p> Hi! I'm Rabia. I graduated from engineering and completed a Master's degree. 
+                          My passion for technology is reflected in my proficiency in various programming languages. 
+                          I especially enjoy working with Python, Javasctipt, CSS and HTML, and am dedicated to continuing my growth in the field.
+                          I am currently open to job opportunities that match my skills and experience, where I can contribute, learn and grow.  
+                          Thank you for visiting my website!</p>
+                       
+                    </section>
+                
+                    <section class="my-skills">
+                        <h2 class="underline-box">MY SKILLS</h2>
+                    <div class="my-skills">
+                        <div class="my-skillss">Python</div>
+                        <div class="my-skillss">HTML</div>
+                        <div class="my-skillss">CSS</div>
+                        <div class="my-skillss">JavaScript</div>
+                        <div class="my-skillss">R</div>
+                        <div class="my-skillss">Java Eclipse</div>
+                        <div class="my-skillss">Knime</div>
+                    
+                      </div>
+          
+                    
+                   
+                
+            </div>
+<footer>
+
+
+            <div id= "footer" class="contact">  
+              
+              <div class="social-buttons">
+                <a href="https://linkedin.com/in/rabia-cakariz" class="social-button social-button--linkedin" aria-label="LinkedIn">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+               
+                <a href="https://github.com/rabiacakariz" class="social-button social-button--github" aria-label="GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+                
+          
+          
+              </div>
+            </div>
+</footer>         
+
+
+
+
+            </body>
+        </html>
+        
